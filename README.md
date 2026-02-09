@@ -12,3 +12,6 @@ my-markdown-dialect
 
 ### Addons
 - [remarkjs/remark-toc: plugin to generate a table of contents (TOC)](https://github.com/remarkjs/remark-toc)
+
+### Preview and printing
+- [dirkarnez/html-repl](https://github.com/dirkarnez/html-repl)
