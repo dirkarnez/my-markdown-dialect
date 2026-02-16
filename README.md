@@ -10,6 +10,9 @@ my-markdown-dialect
 - [ ] quotes
 - [ ] footnotes
 
+### Tutorials
+- [moyen-blog/goldmark-extensions: Extensions for the GoldMark Markdown parser used by Moyen](https://github.com/moyen-blog/goldmark-extensions)
+
 ### Addons
 - [remarkjs/remark-toc: plugin to generate a table of contents (TOC)](https://github.com/remarkjs/remark-toc)
 
