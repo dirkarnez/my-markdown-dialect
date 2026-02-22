@@ -17,9 +17,18 @@ my-markdown-dialect
   - ```html
     1<hr>2
     ``
-- [ ] image and caption
+- [x] image and caption
+  - ```html
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Wiki-Loves-Love-logo.svg/120px-Wiki-Loves-Love-logo.svg.png" style="width: 100%">
+    ``
 - [ ] quotes
 - [ ] footnotes
+- [x] Force center
+  - ```html
+    <div style="text-align: center;">
+        123
+    </div>
+    ``
 
 ### Headless
 - [dirkarnez/savepdf](https://github.com/dirkarnez/savepdf)
