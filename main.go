@@ -17,7 +17,7 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
-	err = os.WriteFile("output.html", []byte(finalHTML), 0644)
+	err = os.WriteFile("Report.html", []byte(finalHTML), 0644)
 	if err != nil {
 		panic(err)
 	}
