@@ -10,6 +10,9 @@ my-markdown-dialect
 - [ ] quotes
 - [ ] footnotes
 
+### Headless
+- [dirkarnez/savepdf](https://github.com/dirkarnez/savepdf)
+
 ### Tutorials
 - [moyen-blog/goldmark-extensions: Extensions for the GoldMark Markdown parser used by Moyen](https://github.com/moyen-blog/goldmark-extensions)
 
