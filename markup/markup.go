@@ -9,8 +9,8 @@ import (
 	"github.com/yuin/goldmark/renderer/html"
 )
 
-func Parse(source string) (string, error) {
-	md := goldmark.New(
+func newParser() goldmark.Markdown {
+	return goldmark.New(
 		goldmark.WithExtensions(extension.GFM),
 		goldmark.WithParserOptions(
 			parser.WithAutoHeadingID(),
@@ -22,8 +22,20 @@ func Parse(source string) (string, error) {
 			html.WithXHTML(),
 		),
 	)
+}
+
+func ParseString(source string) (string, error) {
 	var buf bytes.Buffer
-	if err := md.Convert([]byte(source), &buf); err != nil {
+	if err := newParser().Convert([]byte(source), &buf); err != nil {
+		return "", err
+	} else {
+		return buf.String(), nil
+	}
+}
+
+func ParseBytes(source []byte) (string, error) {
+	var buf bytes.Buffer
+	if err := newParser().Convert(source, &buf); err != nil {
 		return "", err
 	} else {
 		return buf.String(), nil
