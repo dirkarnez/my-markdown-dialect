@@ -29,6 +29,7 @@ my-markdown-dialect
         123
     </div>
     ``
+- [ ] WebAssembly
 
 ### Headless
 - [dirkarnez/savepdf](https://github.com/dirkarnez/savepdf)
