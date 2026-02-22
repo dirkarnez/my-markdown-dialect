@@ -1,6 +1,7 @@
 my-markdown-dialect
 ===================
-[dirkarnez/printing-friendly-html-code-blocks](https://github.com/dirkarnez/printing-friendly-html-code-blocks)
+<kbd>[**dirkarnez/my-markdown-dialect-essay-template**](https://github.com/dirkarnez/my-markdown-dialect-essay-template)</kbd><br>
+
 
 ### Elements to support
 - [ ] `import` code files
