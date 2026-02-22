@@ -1,5 +1,7 @@
 my-markdown-dialect
 ===================
+[dirkarnez/printing-friendly-html-code-blocks](https://github.com/dirkarnez/printing-friendly-html-code-blocks)
+
 ### Elements to support
 - [ ] `import` code files
 - [ ] code blocks with line number

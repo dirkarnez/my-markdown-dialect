@@ -6,7 +6,7 @@ import (
 	"log"
 )
 
-func Finalize(markdownHTML string) string {
+func Finalize(markdownHTML string) (string, error) {
 	// 2. Parse the template content
 	// We use template.Must() for simplicity in this example to panic on error
 	// otherwise, we would check the error returned by Parse()
@@ -89,8 +89,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
 	var buf bytes.Buffer
 	err = tmpl.Execute(&buf, data)
 	if err != nil {
-		log.Fatal("Error executing template:", err)
+		return "", err
 	}
 
-	return buf.String()
+	return buf.String(), nil
 }
