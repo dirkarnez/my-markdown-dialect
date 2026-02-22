@@ -19,48 +19,48 @@ func Finalize(markdownHTML string) (string, error) {
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.0/languages/go.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/highlightjs-line-numbers.js/dist/highlightjs-line-numbers.min.js"></script>
   	<style>
+    .hljs-ln-numbers {
+        text-align: center;
+        color: #ccc;
+        border-right: 1px solid #999;
+        vertical-align: top;
+        padding-right: 5px !important;
 
-.hljs-ln-numbers {
-      text-align: center;
-      color: #ccc;
-      border-right: 1px solid #999;
-      vertical-align: top;
-      padding-right: 5px !important;
-
-      -webkit-touch-callout: none;
-      -webkit-user-select: none;
-      -khtml-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
-      user-select: none;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
     }
     .hljs-ln-code {
-      padding-left: 10px !important;
+        padding-left: 10px !important;
     }
 
     /* .hljs-ln-code,
     .hljs-ln-numbers {
-      line-height: 14px;
+        line-height: 14px;
     } */
 
     code {
-      white-space: pre-wrap;
-      overflow: auto;
+        white-space: pre-wrap;
+        overflow: auto;
     }
 
-@media print {
-  hr {
-		page-break-after: always;
-		visibility: hidden;
-		height: 0;
-		padding: 0;
-		margin-top: 0;
-		margin-bottom: 0;
-  }
-}
+	@media print {
+		hr {
+				page-break-after: always;
+				visibility: hidden;
+				height: 0;
+				padding: 0;
+				margin-top: 0;
+				margin-bottom: 0;
+		}
+	}
 	</style>
 </head>
 <body>
+
 <div class="container">
 	{{ .Cotent }}
 </div>
