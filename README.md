@@ -4,10 +4,19 @@ my-markdown-dialect
 
 ### Elements to support
 - [ ] `import` code files
-- [ ] code blocks with line number
-- [ ] math blocks
+- [x] code blocks with line number
+- [x] math blocks
+    - 2 `$` for centered `$$\sum_{i=1}^n i = \frac{n(n+1)}{2}$$`
+    - 1 `$` for left `$$\sum_{i=1}^n i = \frac{n(n+1)}{2}$$`
 - [ ] `import` [JSXGraph](https://jsxgraph.uni-bayreuth.de/home/)
-- [ ] explicit newlines
+- [x] explicit newlines
+  - ```html
+    1<br>2
+    ``
+- [x] explicit newlines
+  - ```html
+    1<hr>2
+    ``
 - [ ] image and caption
 - [ ] quotes
 - [ ] footnotes

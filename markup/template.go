@@ -14,9 +14,9 @@ func Finalize(markdownHTML string) (string, error) {
 <html>
 <head>
 <meta charset="UTF-8">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.0/styles/default.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.0/styles/github-dark.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.0/highlight.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.0/languages/go.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.0/languages/matlab.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/highlightjs-line-numbers.js/dist/highlightjs-line-numbers.min.js"></script>
   	<style>
     .hljs-ln-numbers {
@@ -49,12 +49,12 @@ func Finalize(markdownHTML string) (string, error) {
 
 	@media print {
 		hr {
-				page-break-after: always;
-				visibility: hidden;
-				height: 0;
-				padding: 0;
-				margin-top: 0;
-				margin-bottom: 0;
+            page-break-after: always;
+            visibility: hidden;
+            height: 0;
+            padding: 0;
+            margin-top: 0;
+            margin-bottom: 0;
 		}
 	}
 	</style>
