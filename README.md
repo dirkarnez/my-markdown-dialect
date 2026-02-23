@@ -43,6 +43,23 @@ my-markdown-dialect
 
 ### Preview and printing
 - [dirkarnez/html-repl](https://github.com/dirkarnez/html-repl)
+    - ```js
+      function printIframeContent() {
+        var iframe = document.getElementById("print-iframe");
+        
+        // Wait for the content to load (especially crucial if it's a PDF file)
+        iframe.onload = function() {
+            var contentWindow = iframe.contentWindow;
+            contentWindow.focus(); // Set focus to the iframe
+            contentWindow.print(); // Open the print dialog
+        };
+        
+        // If the content is already loaded, you can call print() directly
+        if (iframe.contentWindow.document.readyState === 'complete') {
+            iframe.onload(); // Trigger the onload logic manually
+        }
+        }
+     ```
 
 ### Go
 - [Advanced markdown processing in Go](https://blog.kowalczyk.info/article/cxn3/advanced-markdown-processing-in-go.html)
