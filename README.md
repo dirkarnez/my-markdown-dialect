@@ -13,15 +13,15 @@ my-markdown-dialect
 - [x] explicit newlines
   - ```html
     1<br>2
-    ``
+    ```
 - [x] explicit newlines
   - ```html
     1<hr>2
-    ``
+    ```
 - [x] image and caption
   - ```html
     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Wiki-Loves-Love-logo.svg/120px-Wiki-Loves-Love-logo.svg.png" style="width: 100%">
-    ``
+    ```
 - [ ] quotes
 - [ ] footnotes
 - [x] Force center
@@ -31,17 +31,18 @@ my-markdown-dialect
     </div>
     ```
 - [x] Left-aligned calculation steps
-  - ```markdown
-    $$
-    \begin{aligned}
-    \sqrt{37} & = \sqrt{\frac{73^2-1}{12^2}} \\
-     & = \sqrt{\frac{73^2}{12^2}\cdot\frac{73^2-1}{73^2}} \\ 
-     & = \sqrt{\frac{73^2}{12^2}}\sqrt{\frac{73^2-1}{73^2}} \\
-     & = \frac{73}{12}\sqrt{1 - \frac{1}{73^2}} \\ 
-     & \approx \frac{73}{12}\left(1 - \frac{1}{2\cdot73^2}\right)
-    \end{aligned}
-    $$
-    ```
+  - [Aligning Equations in mathjax - Write down the problem. Think real hard. Write down the solution.](https://marquis08.github.io/mathjax/minimalmistakes/align-equations-in-mathjax/)
+      - ```markdown
+        $$
+        \begin{aligned}
+        \sqrt{37} & = \sqrt{\frac{73^2-1}{12^2}} \\
+         & = \sqrt{\frac{73^2}{12^2}\cdot\frac{73^2-1}{73^2}} \\ 
+         & = \sqrt{\frac{73^2}{12^2}}\sqrt{\frac{73^2-1}{73^2}} \\
+         & = \frac{73}{12}\sqrt{1 - \frac{1}{73^2}} \\ 
+         & \approx \frac{73}{12}\left(1 - \frac{1}{2\cdot73^2}\right)
+        \end{aligned}
+        $$
+        ```
 - [ ] WebAssembly
 
 ### Headless
