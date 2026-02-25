@@ -77,3 +77,6 @@ my-markdown-dialect
 ### Go
 - [Advanced markdown processing in Go](https://blog.kowalczyk.info/article/cxn3/advanced-markdown-processing-in-go.html)
 - [gomarkdown/markdown: markdown parser and HTML renderer for Go](https://github.com/gomarkdown/markdown)
+
+### Reference
+- [liffiton/code2tex: Convert source code to a LaTeX document / PDF with syntax highlighting and line numbers.](https://github.com/liffiton/code2tex)
