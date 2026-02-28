@@ -80,9 +80,15 @@ document.addEventListener('DOMContentLoaded', (event) => {
       window.MathJax = {
         tex: {
           inlineMath: {'[+]': [['$', '$']]}
-        }
+        },
+		output: {
+			displayAlign: 'center'
+		}
       };
     }
+
+
+	
     const script = document.createElement('script');
     script.src = 'https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js';
     document.head.appendChild(script);
