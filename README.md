@@ -5,6 +5,8 @@ my-markdown-dialect
 
 ### Elements to support
 - [ ] `import` code files
+- [ ] `<div>`-based flex-box columns
+- [ ] css grid table
 - [x] code blocks with line number
 - [x] math blocks
     - 2 `$` for centered `$$\sum_{i=1}^n i = \frac{n(n+1)}{2}$$`
