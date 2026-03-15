@@ -6,13 +6,31 @@ import (
 	"github.com/dirkarnez/my-markdown-dialect/markup"
 )
 
+var (
+	title string
+	fileName string
+)
+
 func main() {
-	content, err := os.ReadFile("Report.md")
+	flag.StringVar(&title, "title", "", "PDF title")
+	flag.StringVar(&fileName, "fileName", "", "file name of the input Markdown file")
+	flag.Parse()
+
+	var content []byte
+	var err error
+	
+	if len(fileName) < 1 {
+		content, err = os.ReadFile("Report.md")
+	} else {
+		content, err = os.ReadFile(fileName)
+	}
+	
 	if err != nil {
 		panic(err)
 	}
+	
 	// o, _ := markup.Parse("This sentence uses `$` delimiters to show math inline: $\\sqrt{3x-1}+(1+x)^2$<hr>```123```")
-	o, _ := markup.ParseBytes(content)
+	o, _ := markup.ParseBytes(title, content)
 	finalHTML, err := markup.Finalize(o)
 	if err != nil {
 		panic(err)
