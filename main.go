@@ -3,6 +3,7 @@ package main
 import (
 	"flag"
 	"os"
+	"strings"
 	
 	"github.com/dirkarnez/my-markdown-dialect/markup"
 )
@@ -10,11 +11,13 @@ import (
 var (
 	title string
 	fileName string
+	outputFileName string
 )
 
 func main() {
 	flag.StringVar(&title, "title", "", "PDF title")
 	flag.StringVar(&fileName, "fileName", "", "file name of the input Markdown file")
+	flag.StringVar(&outputFileName, "outputFileName", "", "output file name of the HTML file")
 	flag.Parse()
 
 	var content []byte
@@ -24,6 +27,14 @@ func main() {
 		content, err = os.ReadFile("Report.md")
 	} else {
 		content, err = os.ReadFile(fileName)
+	}
+
+	if len(outputFileName) < 1 {
+		outputFileName = "Report.html"
+	} else {
+		if !strings.HasSuffix(outputFileName, ".html") {
+			outputFileName = outputFileName + ".html"
+		}
 	}
 	
 	if err != nil {
@@ -37,7 +48,7 @@ func main() {
 		panic(err)
 	}
 	
-	err = os.WriteFile("Report.html", []byte(finalHTML), 0644)
+	err = os.WriteFile(outputFileName, []byte(finalHTML), 0644)
 	if err != nil {
 		panic(err)
 	}
