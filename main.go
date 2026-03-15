@@ -1,8 +1,9 @@
 package main
 
 import (
+	"flag"
 	"os"
-
+	
 	"github.com/dirkarnez/my-markdown-dialect/markup"
 )
 
@@ -30,11 +31,12 @@ func main() {
 	}
 	
 	// o, _ := markup.Parse("This sentence uses `$` delimiters to show math inline: $\\sqrt{3x-1}+(1+x)^2$<hr>```123```")
-	o, _ := markup.ParseBytes(title, content)
-	finalHTML, err := markup.Finalize(o)
+	o, _ := markup.ParseBytes(content)
+	finalHTML, err := markup.Finalize(title, o)
 	if err != nil {
 		panic(err)
 	}
+	
 	err = os.WriteFile("Report.html", []byte(finalHTML), 0644)
 	if err != nil {
 		panic(err)
