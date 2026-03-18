@@ -51,11 +51,12 @@ my-markdown-dialect
 - [ ] Headless chrome pdf (my desktop chrome is messed up)
   - https://github.com/chromedp/cdproto/blob/master/page/page.go
   - https://github.com/chromedp/examples/blob/master/pdf/main.go
+  - [dirkarnez/savepdf](https://github.com/dirkarnez/savepdf)
+  - https://github.com/chromedp/examples/tree/master/remote
+  - https://github.com/rahul-bhave/headless-chrome-github-action
 - [ ] Linux scripts
 - [ ] WebAssembly
 - [ ] default file name and specified file name
-### Headless
-- [dirkarnez/savepdf](https://github.com/dirkarnez/savepdf)
 
 ### Tutorials
 - [moyen-blog/goldmark-extensions: Extensions for the GoldMark Markdown parser used by Moyen](https://github.com/moyen-blog/goldmark-extensions)
