@@ -48,6 +48,10 @@ my-markdown-dialect
 
 
 ### TODOs
+- [ ] Headless chrome pdf (my desktop chrome is messed up)
+  - https://github.com/chromedp/cdproto/blob/master/page/page.go
+  - https://github.com/chromedp/examples/blob/master/pdf/main.go
+- [ ] Linux scripts
 - [ ] WebAssembly
 - [ ] default file name and specified file name
 ### Headless
