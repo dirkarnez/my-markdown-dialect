@@ -5,7 +5,8 @@ my-markdown-dialect
 
 ### Elements to support
 - [ ] `import` code files
-- [ ] `<div>`-based flex-box columns
+- [ ] `<div>`-based flex-box columns (with start / end n columns style)
+- [ ] code diff left-right view
 - [ ] css grid table
 - [x] code blocks with line number
 - [x] math blocks
